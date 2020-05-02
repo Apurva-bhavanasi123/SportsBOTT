@@ -1,7 +1,7 @@
 from firebase import firebase
 
 
-firebase = firebase.FirebaseApplication('https://sports-chatbot-267305.firebaseio.com/', None)
+firebase = firebase.FirebaseApplication('xxxxxxxxxxxxxxxx', None)
 data =  { 'url': 'John Doe',
           
           }
