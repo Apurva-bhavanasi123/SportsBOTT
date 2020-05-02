@@ -2,7 +2,7 @@ def youtube_search(query):
     import random
     from googleapiclient.discovery import build
     from googleapiclient import discovery
-    DEVELOPER_KEY = 'AIzaSyAhTGmRtQ_MOyEUZXqY2ywOhMAxWpHnSms'
+    DEVELOPER_KEY = 'xxxxxxxxxxxxxxxxxxxxx'
     YOUTUBE_API_SERVICE_NAME = 'youtube'
     YOUTUBE_API_VERSION = 'v3'
     youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION,
