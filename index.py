@@ -247,9 +247,7 @@ def trendin():
     return 'People are searching about'+'\n'.join((list((df).to_frame()["query"])))
 '''def highlight(team1,team2,matchDate):
     team1=get_eventId(team1,team2,matchDate)
-    resp=requests.get("https://allsportsapi.com/api/football/?met=H2H&APIkey=2d272f5e7de38dcbe3c76361b9b16559b7cdea75940781642daeb76f1a48c341&firstTeamId=2616&secondTeamId=2617")
-    return requests.get("https://allsportsapi.com/api/football/?&met=Videos&eventId=306171&APIkey=2d272f5e7de38dcbe3c76361b9b16559b7cdea75940781642daeb76f1a48c341")
-'''
+   '''
 def trending(k):
     
     import pandas as pd
@@ -283,7 +281,7 @@ def gossip():
     
     
 def score(awayteam,hometeam,dateT,dateT1):
-    resp=requests.get("https://allsportsapi.com/api/football/?met=Fixtures&APIkey=2d272f5e7de38dcbe3c76361b9b16559b7cdea75940781642daeb76f1a48c341&from="+dateT+"&to="+dateT1+"&countryId=62")
+    resp=requests.get("https://allsportsapi.com/api/football/?met=Fixtures&APIkey=xxx&from="+dateT+"&to="+dateT1+"&countryId=62")
     
 
     for x in resp.json()["result"]:
@@ -305,7 +303,7 @@ def score(awayteam,hometeam,dateT,dateT1):
    
 def senti(k,sen):
     import urllib.request as r
-    sol=json.loads(requests.get("https://apiv2.apifootball.com/?action=get_leagues&APIkey=ab601b8d06cadb81db396e987358e0d8cbc06141c2f27c6cfca81cafa358c6ea").text)
+    sol=json.loads(requests.get("https://apiv2.apifootball.com/?action=get_leagues&APIkey=xxxx").text)
     sol=[x for x in sol if(x["league_name"].lower()==k.lower())]
     sentiment=sen
     dic=dict()
