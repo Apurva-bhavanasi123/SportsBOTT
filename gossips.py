@@ -13,7 +13,7 @@ import random
 driver = webdriver.Chrome()
 search_url = "https://profootballtalk.nbcsports.com/category/rumor-mill/"
 
-firebase = firebase.FirebaseApplication('https://sports-chatbot-267305.firebaseio.com/', None)
+firebase = firebase.FirebaseApplication('xxxxxxxxxxxx', None)
 
 
 driver.get(search_url)
