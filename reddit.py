@@ -8,11 +8,11 @@ def sentiment(sentence):
     senti=json.loads(requests.post("http://text-processing.com/api/sentiment/",dic).text)
     return senti
 def get_comments(IDL):
-    reddit = praw.Reddit(client_id='3Nl9Q_a8GR0p_g', \
-                     client_secret='2R4HP3mzTKKOHgjG5Ztas99IW20', \
-                     user_agent='sportsapp', \
-                     username='appuuuuu123', \
-                     password='uHbu!F6pm$72SWe')
+    reddit = praw.Reddit(client_id='', \
+                     client_secret='', \
+                     user_agent='', \
+                     username='', \
+                     password='')
     submission = reddit.submission(IDL)
     from praw.models import MoreComments
     submission.comments.replace_more(limit=None)
@@ -66,11 +66,11 @@ def reddit_scrapper(url, num, after = None):
 import praw
 import requests,time
 import pandas as pd
-reddit = praw.Reddit(client_id='3Nl9Q_a8GR0p_g', \
-                     client_secret='2R4HP3mzTKKOHgjG5Ztas99IW20', \
+reddit = praw.Reddit(client_id='', \
+                     client_secret='', \
                      user_agent='sportsapp', \
-                     username='appuuuuu123', \
-                     password='uHbu!F6pm$72SWe')
+                     username='', \
+                     password='')
 subreddit = reddit.subreddit('IndianFootball')
 top_subreddit = subreddit.top(limit=100)
 print(top_subreddit)
