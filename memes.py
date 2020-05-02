@@ -45,7 +45,7 @@ from firebase import firebase
 # Get a database reference to our blog.
 
 from bs4 import BeautifulSoup as soup
-firebase = firebase.FirebaseApplication('https://sports-chatbot-267305.firebaseio.com/', None)
+firebase = firebase.FirebaseApplication('XXXXXXXXXXXXXXXXXXXXXXXXX', None)
 
 
 url ="https://me.me/t/funny"
