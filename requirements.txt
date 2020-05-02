@@ -51,7 +51,7 @@ selenium==3.141.0
 six==1.14.0
 soupsieve==2.0
 uritemplate==3.0.1
-urllib3==1.22
+urllib3==1.24.2
 Werkzeug==1.0.0
 praw==7.0.0
 setuptools==40.3.0
