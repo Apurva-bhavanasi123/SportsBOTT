@@ -29,7 +29,7 @@ lib==3.0.0
 lxml==4.5.0
 MarkupSafe==1.1.1
 ndg-httpsclient==0.5.1
-numpy==1.18.2
+numpy==1.22.0
 oauthlib==3.1.0
 paho-mqtt==1.5.0
 pandas==1.0.3
